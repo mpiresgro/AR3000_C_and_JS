@@ -1,7 +1,8 @@
 #include <sys/socket.h>
 #include <arpa/inet.h>
 #include <unistd.h>
-#include "../PK_Data_Extractor/data_extractor.c"
+#include <string.h>
+#include "../PK_Extractor/data_extractor.h"
 
 #ifndef ADDRESS
 #define ADDRESS "127.0.0.1"
@@ -23,4 +24,4 @@
 #define TIMEOUT -1 //5000000
 #endif
 
-extern int start_tcp_client();
+int start_tcp_client();

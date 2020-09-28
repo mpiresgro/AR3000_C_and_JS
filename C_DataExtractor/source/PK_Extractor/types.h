@@ -1,3 +1,6 @@
+#ifndef TYPES_H_INCLUDED
+#define TYPES_H_INCLUDED
+
 #include <stdint.h>
 #include <stdbool.h>
 #include <stdlib.h>
@@ -40,3 +43,4 @@ typedef enum
     BINARY
 } T_Format;
 
+#endif

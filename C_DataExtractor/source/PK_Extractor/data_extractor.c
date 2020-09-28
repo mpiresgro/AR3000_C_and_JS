@@ -36,7 +36,8 @@ void Data_Extractor(T_Buffer *I_Messagge, T_Measurements *O_Measurements)
         Decode_Binary(I_Messagge, O_Measurements);
         break;
     default:
-        printf("MODE > Someting wong\n");
+        // printf("MODE > Someting wong\n");
         // Someting wong
+        break;
     }
 }
