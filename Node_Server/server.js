@@ -1,6 +1,6 @@
 var output;
 
-function handle_data(data) {
+function encode_data(data) {
 
     var decimal = require('./encode_decimal');
     var binary = require('./encode_binary');
@@ -62,7 +62,7 @@ io.sockets.on('connection',
         socket.on('data',
             function (data) {
                 // Data comes in as whatever was sent, including objects
-                handle_data(data);
+                encode_data(data);
                 // Send it to all other clients
                 socket.broadcast.emit('data', data);
                 // This is a way to send to everyone including sender
@@ -74,7 +74,6 @@ io.sockets.on('connection',
         });
     }
 );
-
 
 // ----------------------------------------- C CLIENT
 
